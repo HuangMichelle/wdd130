@@ -1,0 +1,27 @@
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {     /*  names all the <a>elements that are children of the <nav> element that applies the following declarations*/
+    color: white;      /* foreground of font color will be white */
+    display: block;     /*  display will change from the default of inline to block*/
+    padding: 20px;     /* each anchor tag will have padding of 20px */
+
+}
+
+h1 {
+    color: steelblue;     /* foreground font color is set to steelblue */
+}
+
+img { 
+    width: 150px;     /* a set width with a heght that will adjust dynamically to fit the image's aspect ration */
+    height: auto;     
+    border: 1px solid steelblue; /* a border shortcut that names the widdth, type of border, and color of the border */
+    padding:2px; /* padding between the image and the border */
+    box-shadow: 0 0 30px gray; /*a box shadow around the image border with zero offset and depth of 30px in gray*/
+}
+
+p {
+    padding: 10px; /*padding between the paragragh content and the border is set to 10 pixels*/
+}
