@@ -1,6 +1,6 @@
 /* import reference from Google Fonts API to use fonts selected below */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 /* define CSS variables in document :root pseudo-class selector */
 
 :root {
@@ -15,7 +15,7 @@
     --nav-hover-background-color: #0B95DB;
 
     --heading-font:'Open Sans' sans-serif;
-    --paragragh-font: 'PT Sams' sans-serif;
+    --paragragh-font: 'PT Sans' sans-serif;
 }
 
 
@@ -41,7 +41,7 @@ p {
 }
 
 nav {
-    background-color: var( --nav-background-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display:flex;
 }
