@@ -1,16 +1,19 @@
 /* import reference from Google Fonts API to use fonts selected below */
-@import url('htpps://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* define CSS variables in document :root pseudo-class selector */
 
 :root {
     --primary-color: #2C1B74;
     --secondary-color: #9F8489;
-    --accent1-color:#0B95DB;
+    --accent1-color:#0F8AD0;
     --accent2-color: #AEC9DB;
 
-    --heading-font:'Open Sans' serif;
-    --paragragh-font: 'PT Sams' serif;
+    --nav-background-color: 0B95DB;
+    --nav-link-color: 0B95DB;
+
+    --heading-font:'Open Sans' sans-serif;
+    --paragragh-font: 'PT Sams' sans-serif;
 }
 
 
