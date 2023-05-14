@@ -25,11 +25,13 @@ body {
 /*Header styles*/
 header {
   display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: var(--primary-color);
 }
+
 
 header img {
   height: 150px;
