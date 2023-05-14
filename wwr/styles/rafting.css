@@ -169,7 +169,7 @@ nav a:hover {
   padding: 50px;
   background-color: var(--secondary-color); */
   display: grid;
-  grid-template-columns: (auto-fit, minmax(200px, 1fr));
+  /* grid-template-columns: (auto-fit, minmax(200px, 1fr)); */
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   align-items: center;
