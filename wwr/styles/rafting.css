@@ -1,24 +1,28 @@
+/*Import Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+/*Define custom colors*/
 :root {
-  --primary-color: #2C1B74;
-  --secondary-color: #9F8489;
-  --accent1-color:#0F8AD0;
+  --primary-color: #215097;
+  --secondary-color: rgba(255, 255, 255, 0.8);
+  --accent1-color: #9F8489;
   --accent2-color: #AEC9DB;
-
+  --text-color: #132430;
 }
 
-
+/*Global styles*/
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 30px;
   line-height: 1.5;
   color: var(--text-color);
   margin: 0;
+  width: 100%;
   padding: 0;
 }
 
+/*Header styles*/
 header {
   display: flex;
   justify-content: space-between;
@@ -27,19 +31,12 @@ header {
   background-color: var(--primary-color);
 }
 
-header h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-}
-
 header img {
-  height: 50px;
+  height: 150px;
+  margin-left: 240px
 }
 
-nav a {
+/* nav a {
   color: var(--secondary-color);
   text-decoration: none;
   margin: 0 10px;
@@ -48,7 +45,31 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+} */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px;
 }
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 24px; /* Adjust the font size as desired */
+  padding: 10px; /* Add padding to create space around the text */
+  border-radius: 10px; /* Add rounded corners to create a box */
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: var(--secondary-color); /* Change background color on hover */
+}
+
+/*Hero section styles*/
 
 .hero {
   position: relative;
@@ -58,11 +79,16 @@ nav a:hover {
 .hero-img {
   width: 100%;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .hero h1 {
   position: absolute;
-  top: 50%;
+  top: 1%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--secondary-color);
@@ -71,85 +97,141 @@ nav a:hover {
   text-transform: uppercase;
   text-align: center;
   z-index: 2;
+  color: var(--text-color)
 }
 
 .hero article {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: var(--secondary-color);
-  width: 50%;
-  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 50px;
+  /* text-align: center; */
+
+}
+/* 
+.hero article img {
+  width: 200px;
+  float: right;
+} */
+
+/* .hero article p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+} */
+
+
+.hero article p {
+  float: left;
+  width: 560%;
+  color: var(--text-color)
+
 }
 
 .hero article img {
   float: right;
   width: 40%;
-  margin: 0 0 10px 10px;
-}
-
-section {
-  margin: 50px auto;
-  max-width: 800px;
-}
-
-section h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
-section p {
-  margin-bottom: 30px;
+.hero section {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 50px;
+  text-align: center;
 }
 
+.hero section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: var(--text-color)
+}
+
+.hero section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--text-color)
+}
+
+/*Adventures section styles*/
+.adventures {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--secondary-color); */
+  display: grid;
+  grid-template-columns: (auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.adventures h2 {
+  grid-column: 1 / -1; /* This will span across all the grid columns */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center; /* To center the h2 text */
+  color: var(--text-color)
+}
+
+.adventures figure {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.adventures figcaption {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-color)
+}
+
+.adventures img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid steelblue;
+  box-shadow: 0 0 30px gray;
+}
+
+/*Footer styles*/
 footer {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  color: var(--text-color);
   padding: 20px;
-  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+.sociallinks {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  /* padding: 10px 0; */
 }
 
 .sociallinks img {
-  width: 30px;
-  margin-right: 10px;
-  border: none;
-}
-
-.sociallinks a:hover img {
-  opacity: 0.7;
-}
-
-@media (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-  }
-  header h3 {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  nav {
-    flex-basis: 100%;
-    text-align: center;
-  }
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  .hero article {
-    width: 80%;
-  }
-  section h2 {
-    font-size: 1.5rem;
-  }
+  width: 50px;
+  margin: 0 10px;
 }
