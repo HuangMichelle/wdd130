@@ -237,3 +237,25 @@ footer p {
   width: 50px;
   margin: 0 10px;
 }
+
+/* contact.html */
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employee {
+  text-align: center;
+}
+
+.employee img {
+  width: 200px;
+  height: auto;
+}
