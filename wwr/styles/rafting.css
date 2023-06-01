@@ -313,9 +313,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 60px;
-  max-width: 800px; /* Adjust as needed */
-  /* margin-left: auto; */
-  margin-left: center;
+  max-width: 800px; 
 }
 
 th, td {
