@@ -35,7 +35,7 @@
         </nav>
     </header>
 
-    
+
     <main>
         <div class="hero">
 
@@ -43,91 +43,93 @@
 
             <p>We love questions and feedback – and we're always happy to help! Here are some ways to contact us.</p>
         </div>
-            <section class="team-members">
-                <div class="employee">
-                    <figure>
-                        <img src="images/employee1.jpg" alt="Employee 1">
-                        <figcaption>
-                            <p>Morgan Freeman</p>
-                            <p>Tour Guide</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="employee">
-                    <figure>
-                        <img src="images/employee2.jpg" alt="Employee 2">
-                        <figcaption>
-                            <p>Betty White</p>
-                            <p>Rafting Instructor</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="employee">
-                    <figure>
-                        <img src="images/employee3.jpg" alt="Employee 3">
-                        <figcaption>
-                            <p>Bruce Willis</p>
-                            <p>River Safety Expert</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
+        <section class="team-members">
+            <div class="employee">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <figcaption>
+                        <p>Morgan Freeman</p>
+                        <p>Tour Guide</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="employee">
+                <figure>
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <figcaption>
+                        <p>Betty White</p>
+                        <p>Rafting Instructor</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="employee">
+                <figure>
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <figcaption>
+                        <p>Bruce Willis</p>
+                        <p>River Safety Expert</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-            <section class="contact-info">
-                <div class="headquarters">
-                    <h2>Headquarters</h2>
-                    <p>📍 Address: 123 River Rafting Lane, City, State ZIP</p>
-                    <p>📧 Email: info@riverraftingco.com</p>
-                    <p>☎️ Phone: (555) 123-4567</p>
+        <section class="contact-info">
+            <div class="headquarters">
+                <h2>Headquarters</h2>
+                <p>📍 Address: 123 River Rafting Lane, City, State ZIP</p>
+                <p>📧 Email: info@riverraftingco.com</p>
+                <p>☎️ Phone: (555) 123-4567</p>
+            </div>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42857.668072739325!2d-122.34306341670923!3d47.82788612978411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549004c59d078911%3A0x6e735266fc477816!2sLynnwood%2C%20WA!5e0!3m2!1sen!2sus!4v1685585700152!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </section>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Send us a message and we'll respond within 24 hours.</p>
+            <p>For any inquiries or questions, please fill out the form below:</p>
+
+            <form action="submit-form.php" method="POST">
+                <h3>Contact Form</h3>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42857.668072739325!2d-122.34306341670923!3d47.82788612978411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549004c59d078911%3A0x6e735266fc477816!2sLynnwood%2C%20WA!5e0!3m2!1sen!2sus!4v1685585700152!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </section>
-            <section class="contact-section">
-                <h2>Contact Us</h2>
-                <p>Send us a message and we'll respond within 24 hours.</p>
-                <p>For any inquiries or questions, please fill out the form below:</p>
+                <div>
+                    <label for="purpose">Purpose of Message:</label>
+                    <input type="radio" id="inquiry" name="purpose" value="general-inquiry" required>
+                    <label for="inquiry">General Inquiry</label>
+                </div>
+                <div>
+                    <input type="radio" id="reservation" name="purpose" value="reservation-question">
+                    <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                    <input type="radio" id="suggestion" name="purpose" value="website-suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </div>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
 
-                <form action="submit-form.php" method="POST">
-                    <h3>Contact Form</h3>
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="purpose">Purpose of Message:</label>
-                        <div>
-                            <input type="radio" id="inquiry" name="purpose" value="general-inquiry" required>
-                            <label for="inquiry">General Inquiry</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="reservation" name="purpose" value="reservation-question">
-                            <label for="reservation">Reservation Question</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="suggestion" name="purpose" value="website-suggestion">
-                            <label for="suggestion">Website Suggestion</label>
-                        </div>
-                    </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-
-            </section>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 🍦 River Rafting Co. 🍦 Michelle Huang </p>
